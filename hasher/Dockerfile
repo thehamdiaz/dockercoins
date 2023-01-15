@@ -1,5 +1,6 @@
 FROM alpine:3.13
 RUN apk add --update build-base curl
+RUN apk add ruby
 RUN gem install sinatra
 RUN gem install thin
 ADD hasher.rb /
